@@ -1,6 +1,6 @@
 # Launch C / C++ 0.1.1
 
-C11/C++17 and CMake. Extract the native installation ZIP, then add only that Launch prefix to CMake. SDK 0.11.0 core, adapters, import targets and notices are included. The Windows amd64 GNU archive bundles curl. Other platforms can build the complete source using standard C11/curl/OpenSSL development libraries.
+C11/C++17 and CMake. Download the Windows amd64 GNU or Linux amd64 native installation ZIP from [GitHub Releases](https://github.com/spf86/licentivo-launch-sdk/releases/tag/v0.1.1), verify SHA256SUMS, then add only that Launch prefix to CMake. SDK 0.11.0 core, adapters, import targets and notices are included. The Windows archive bundles curl. Other platforms can build the complete source using standard C11/curl/OpenSSL development libraries.
 
 ```cmake
 find_package(LicentivoLaunch CONFIG REQUIRED)

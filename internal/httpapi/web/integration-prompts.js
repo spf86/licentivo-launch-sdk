@@ -16,52 +16,52 @@ export const integrationTargets = Object.freeze(Object.fromEntries(Object.entrie
 const profiles = {
   go: {
     api: "launchclient.Connect(merchantOrigin, launchProductID, licentivoProductID, trustedKeys, launchclient.Config{Environment: environment}) with the built-in runtime adapter; Login(ctx, email, password), Restore(ctx), RunFeature(name, action), Close(), Logout(ctx), ReleaseDevice(ctx). Official SDK dependencies and the default RuntimeFactory are owned by the Launch package; do not copy an adapter. Creating a Launch Client alone does not authorize protected work.",
-    requirements: "Go 1.26+. examples/go is a separate module: preserve its local replace directives or configure module paths as described in the distribution README. The Go library defaults to MemoryStore; the Windows example may select DPAPI automatically. Make the application's remember-login choice explicit.",
+    requirements: "Go 1.26+. Install with go get github.com/spf86/licentivo-launch-sdk/pkg/launchclient@v0.1.1 and import github.com/spf86/licentivo-launch-sdk/pkg/launchclient. The Go library defaults to MemoryStore; make the application's remember-login choice explicit. Local replace directives are needed only when developing the source examples.",
     test: "# Start at the repository root.\ngo test ./pkg/launchclient\ncd examples/go\ngo test ./...\ncd ../..",
   },
   python: {
     api: "licentivo_launch.Application.connect(merchant_origin, launch_product_id, licentivo_product_id, trusted_keys, environment=environment); login, restore, run_feature, close, logout, release_device. The with context closes the runtime. Check each method's parameters in the README instead of borrowing signatures from another language.",
-    requirements: "Python 3.10+. Install only the Launch wheel, or python -m pip install ./sdk/python from the supplied source bundle. The private SDK module and adapter are embedded; cryptography is resolved by pip.",
+    requirements: "Python 3.10+. Install with python -m pip install licentivo-launch==0.1.1 from PyPI. The private SDK module and adapter are embedded; cryptography is resolved by pip. The supplied wheel or source bundle also supports local installation.",
     test: "python -m unittest discover -s sdk/python/tests -v",
   },
   csharp: {
     api: "Licentivo.Launch.Application.Connect(merchantOrigin, launchProductID, licentivoProductID, trustedKeys, environment); await Login/Restore/RunFeature/Logout/ReleaseDevice. Use await using or DisposeAsync to stop the runtime.",
-    requirements: ".NET 8+. Install only Licentivo.Launch 0.1.1 from the local NuGet feed. Official SDK classes are embedded in the Launch assembly; NuGet handles its ordinary BouncyCastle dependency. The source example uses only the Launch ProjectReference.",
+    requirements: ".NET 8+. Install with dotnet add package Licentivo.Launch --version 0.1.1 from NuGet.org. Official SDK classes are embedded in the Launch assembly; NuGet handles its ordinary BouncyCastle dependency. The source example uses only the Launch ProjectReference.",
     test: "dotnet run --project sdk/csharp-tests/Launch.Tests.csproj\ndotnet run --project sdk/csharp-runtime-tests/Launch.RuntimeTests.csproj",
   },
   java: {
     api: "com.licentivo.launch.Launch.connect(merchantOrigin, launchProductID, licentivoProductID, trustedKeys, environment); login(email, char[]), restore, runFeature, logout, releaseDevice, close. Use try-with-resources for close.",
-    requirements: "JDK 17+. Use only launch-client-0.1.1.jar, or install that JAR with its supplied POM into your local Maven repository. Official SDK classes are embedded; no second SDK JAR is required. run.ps1 uses PowerShell and JAVA_HOME.",
+    requirements: "JDK 17+. Add only com.licentivo.launch:launch-client:0.1.1 from Maven Central to Maven or Gradle, or use launch-client-0.1.1.jar from the matching GitHub release. Official SDK classes are embedded; no second SDK JAR is required. Source run.ps1 uses PowerShell and JAVA_HOME.",
     test: "pwsh -File scripts/test-integration-packages.ps1 -Languages java\n# This entry point compiles and runs LaunchTests and OfficialSDKTests.",
   },
   javascript: {
     api: "Application.connect(merchantOrigin, launchProductID, licentivoProductID, trustedKeys, {environment}) from @licentivo/launch; await login/restore/runFeature/logout/releaseDevice/close. Run it only in Node.js or a trusted Electron main process.",
-    requirements: "Node.js 20.3+. Install only the local @licentivo/launch tgz. Its private official SDK modules and default adapter are embedded; no official peer dependency or external SDK path is required.",
+    requirements: "Node.js 20.3+. Install with npm install @licentivo/launch@0.1.1 from npm. TypeScript declarations, private official SDK modules and the default adapter are embedded; no official peer dependency or external SDK path is required.",
     test: "node --test sdk/javascript/test/*.test.mjs",
   },
   rust: {
     api: "licentivo_launch::Application::connect(merchant_origin, launch_product_id, licentivo_product_id, &trusted_key_pairs, environment); login, restore, run_feature, logout, release_device, close/Drop. with_components accepts trusted Store/Transport/RuntimeFactory implementations.",
-    requirements: "Rust 1.85+. Depend only on licentivo-launch. Its build.rs compiles the embedded C11 SDK and configures linking automatically. Windows GNU packages include curl and copy runtime DLLs; other platforms need normal OS curl/OpenSSL development libraries and a C11 compiler. Preserve Cargo.lock.",
+    requirements: "Rust 1.85+. Install with cargo add licentivo-launch@=0.1.1 from crates.io. Its build.rs compiles the embedded C11 SDK and configures linking automatically. Windows GNU packages include curl and copy runtime DLLs; other platforms need normal OS curl/OpenSSL development libraries and a C11 compiler. Preserve Cargo.lock.",
     test: "cargo test --manifest-path sdk/rust/Cargo.toml --locked\ncargo check --manifest-path examples/rust/Cargo.toml --locked",
   },
   ruby: {
     api: "LicentivoLaunch::Application.connect(merchant_origin, launch_product_id, licentivo_product_id, trusted_keys, environment: environment); login, restore, run_feature with a block, logout, release_device, close. Call close from ensure.",
-    requirements: "Ruby 3.1+. Install only the Launch gem matching your platform. Its private SDK core and Windows curl runtime are bundled. The generic source gem compiles its own embedded core automatically and needs a matching C11 toolchain and OS curl/OpenSSL development libraries.",
+    requirements: "Ruby 3.1+. Install with gem install licentivo-launch --version 0.1.1 from RubyGems.org. RubyGems selects the platform package. Its private SDK core and Windows curl runtime are bundled. The generic source gem compiles its own embedded core automatically and needs a matching C11 toolchain and OS curl/OpenSSL development libraries.",
     test: "ruby sdk/ruby/test/test_client.rb\nruby sdk/ruby/test/test_runtime.rb",
   },
   c: {
     api: "launch_application_connect(merchant_origin, launch_product_id, licentivo_product_id, trusted_keys_json, environment, remember, store) and launch_application_login/restore/run_feature/logout/release_device/close from account.h. Check restore's three-state result and launch_application_error; do not execute the callback after failure.",
-    requirements: "C11 and CMake. Install only the Launch native archive, use find_package(LicentivoLaunch CONFIG REQUIRED) and licentivo_launch_link(your_target). Launch owns SDK linking and bundled Windows runtime DLLs. Non-Windows source builds need normal OS curl/OpenSSL development libraries. Read account.h for ownership rules.",
+    requirements: "C11 and CMake. Download the matching Windows amd64 GNU or Linux amd64 native archive from https://github.com/spf86/licentivo-launch-sdk/releases/tag/v0.1.1 and verify SHA256SUMS. Use find_package(LicentivoLaunch CONFIG REQUIRED) and licentivo_launch_link(your_target). Launch owns SDK linking and bundled Windows runtime DLLs. Source builds need normal OS curl/OpenSSL development libraries. Read account.h for ownership rules.",
     test: "cmake -S examples/native -B .cache/native -DCMAKE_BUILD_TYPE=Release -DLICENTIVO_LAUNCH_BUILD_TESTS=ON\ncmake --build .cache/native --config Release\npwsh -File scripts/test-integration-packages.ps1 -Languages c -NativeBuildDirectory .cache/native\n# Prepare runtime libraries per sdk/native/README.md and pass -NativeRuntimeDirectories if needed. Missing prerequisites must fail; never skip signature verification.",
   },
   cpp: {
     api: "licentivo_launch::Application::Connect(merchant_origin, launch_product_id, licentivo_product_id, trusted_keys_json, environment) from launch.hpp; Login, Restore, RunFeature, Logout, ReleaseDevice. RAII destruction stops the runtime. Handle C ABI failures and C++ callback exceptions according to the header.",
-    requirements: "C++17 and CMake. Install only the Launch native archive, use find_package(LicentivoLaunch CONFIG REQUIRED) and licentivo_launch_link(your_target CXX). Launch owns SDK linking and bundled Windows runtime DLLs. Non-Windows source builds need normal OS curl/OpenSSL development libraries.",
+    requirements: "C++17 and CMake. Download the matching Windows amd64 GNU or Linux amd64 native archive from https://github.com/spf86/licentivo-launch-sdk/releases/tag/v0.1.1 and verify SHA256SUMS. Use find_package(LicentivoLaunch CONFIG REQUIRED) and licentivo_launch_link(your_target CXX). Launch owns SDK linking and bundled Windows runtime DLLs. Source builds need normal OS curl/OpenSSL development libraries.",
     test: "cmake -S examples/native -B .cache/native -DCMAKE_BUILD_TYPE=Release -DLICENTIVO_LAUNCH_BUILD_TESTS=ON\ncmake --build .cache/native --config Release\npwsh -File scripts/test-integration-packages.ps1 -Languages cpp -NativeBuildDirectory .cache/native\n# Prepare runtime libraries per sdk/native/README.md and pass -NativeRuntimeDirectories if needed. Missing prerequisites must fail; never skip signature verification.",
   },
   web: {
     api: "This is a Go Web backend reference, not a tenth SDK language. Reuse the CurrentUser and CredentialWithRetry methods of launchclient.Client and the official SDK's RunFeature. examples/web-backend/main.go provides a runtimePool isolated by authenticated account with serialized access. Do not assume that the example includes complete browser login or a BFF.",
-    requirements: "Go 1.26+. examples/web-backend is a separate module. Complete the host application's server-side login, session and deployment policies using docs/software-sdk-integration.md.",
+    requirements: "Go 1.26+. Install with go get github.com/spf86/licentivo-launch-sdk/pkg/launchclient@v0.1.1. examples/web-backend is a separate development module. Complete the host application's server-side login, session and deployment policies using docs/software-sdk-integration.md.",
     test: "# Start at the repository root.\ncd examples/web-backend\ngo test ./...\n# Return to the repository root before running the official SDK signature checks.\ncd ../..\npwsh -File scripts/test-integration-packages.ps1 -Languages go",
   },
 };

@@ -1,6 +1,6 @@
 # Launch Java 0.1.1
 
-JDK 17+. Add only launch-client-0.1.1.jar to your classpath, or install it with the supplied POM into your local Maven repository. SDK 0.11.0 classes and notices are inside this JAR. No second SDK JAR or Maven dependency is required. Standard Java libraries provide the runtime dependencies.
+JDK 17+. Add Maven/Gradle dependency `com.licentivo.launch:launch-client:0.1.1` from Maven Central, or use only launch-client-0.1.1.jar from the matching GitHub release on your classpath. SDK 0.11.0 classes and notices are inside this JAR. No second SDK JAR or Maven dependency is required. Standard Java libraries provide the runtime dependencies.
 
 ## Direct initialization and manual lifecycle
 

@@ -1,9 +1,9 @@
 # Launch Node.js 0.1.1
 
-Node.js 20.3+. Install only the Launch npm artifact:
+Node.js 20.3+. Install only Launch from npm:
 
 ```sh
-npm install ./licentivo-launch-0.1.1.tgz
+npm install @licentivo/launch@0.1.1
 ```
 
 Import from @licentivo/launch. Official SDK 0.11.0 modules, default adapter and TypeScript declarations are inside the package. There is no official SDK peer dependency.

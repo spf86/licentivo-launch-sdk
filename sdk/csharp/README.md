@@ -1,6 +1,6 @@
 # Launch C# / .NET 0.1.1
 
-.NET 8+. Add the artifact directory as a local NuGet source, then install only Licentivo.Launch 0.1.1. Official SDK 0.11.0 source compiles inside the Launch assembly. NuGet resolves the ordinary BouncyCastle.Cryptography dependency; there is no Licentivo.SDK package/project dependency.
+.NET 8+. Install from NuGet.org with `dotnet add package Licentivo.Launch --version 0.1.1`. Downloaded packages can also use a local NuGet feed. Official SDK 0.11.0 source compiles inside the Launch assembly. NuGet resolves the ordinary BouncyCastle.Cryptography dependency; there is no Licentivo.SDK package/project dependency.
 
 ## Direct initialization and manual lifecycle
 

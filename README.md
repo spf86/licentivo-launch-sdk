@@ -15,8 +15,7 @@ configuration file or manual entry of two internal product IDs is required.
 
 ## Install into your application
 
-Version: **0.1.1**. Check the [publication status](docs/registry-status.json) before
-using a registry command; a staged package is not a published package.
+Version: **0.1.1**. Eight public installation checks passed; Maven Central publication is processing. See the [publication status](docs/registry-status.json) and [verification receipt](docs/registry-verification.json).
 
 | Language | Registry command / distribution | API reference |
 | --- | --- | --- |
