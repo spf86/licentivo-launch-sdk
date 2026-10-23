@@ -15,7 +15,7 @@ configuration file or manual entry of two internal product IDs is required.
 
 ## Install into your application
 
-Version: **0.1.2**, with official SDK **0.11.1**. Publication and public installation checks for this version are pending. See the [0.1.2 publication record](docs/publication-0.1.2.md), [publication status](docs/registry-status.json) and [verification receipt](docs/registry-verification.json); earlier receipts apply only to the version they record.
+Version: **0.1.2**, with official SDK **0.11.1**. **9/9 public installation checks passed**: Go, Python, C#, Java, Node.js/TypeScript, Rust, Ruby, C and C++. All registry commands below are publicly available and verified; native and offline files are in the [GitHub release](https://github.com/spf86/licentivo-launch-sdk/releases/tag/v0.1.2). See the [0.1.2 publication record](docs/publication-0.1.2.md), [publication status](docs/registry-status.json) and [verification receipt](docs/registry-verification.json).
 
 This update fixes C/C++ CMake package consumption across curl discovery modes. The licensing protocol and client API are unchanged.
 

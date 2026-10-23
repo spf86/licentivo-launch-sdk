@@ -30,6 +30,8 @@ Connect/connect → Login 或 Restore → RunFeature → Logout / Close
 
 ## 安装与初始化入口
 
+0.1.2 的九种语言公开安装验证已全部通过（9/9），下表安装方式均已验证。[GitHub Release](https://github.com/spf86/licentivo-launch-sdk/releases/tag/v0.1.2) 也提供原生包和离线文件，使用方式见[下载包安装说明](integration-packages.md#install-a-downloaded-distribution)。
+
 | 语言 | 只安装 Launch | 页面提供的连接函数 | 包内直接初始化 API |
 | --- | --- | --- | --- |
 | Go | `go get github.com/spf86/licentivo-launch-sdk/pkg/launchclient@v0.1.2` | `connectLaunch()` | `launchclient.Connect` |

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sdk_version": "0.11.1",
-  "changes": "Only private import and native-library relocation; authorization and cryptographic logic are unchanged. Public repository line endings are normalized to LF.",
+  "changes": "Only private import and native-library relocation, with embedded text line endings normalized to LF; authorization and cryptographic logic are unchanged. Public repository line endings are normalized to LF.",
   "files": [
     {
       "source": "go/advanced.go",

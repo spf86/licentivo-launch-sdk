@@ -18,6 +18,8 @@ The 0.1.2 update carries the upstream C/C++ CMake fix for curl config-package an
 
 ## Install from a public registry
 
+Public 0.1.2 installation checks passed for all nine languages: Go, Python, C#, Java, Node.js/TypeScript, Rust, Ruby, C and C++. The registry commands and native downloads below are publicly available and verified in independent consumers. The publication status records exact package checksums, installation results and platform limits.
+
 ```sh
 go get github.com/spf86/licentivo-launch-sdk/pkg/launchclient@v0.1.2
 python -m pip install licentivo-launch==0.1.2
