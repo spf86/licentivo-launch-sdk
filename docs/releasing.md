@@ -89,3 +89,21 @@ registry preserves its bytes. Record each result independently in
 `docs/registry-status.json`. Pending/login-required states must not be advertised
 as completed releases. Package installation does not establish external merchant,
 payment or licensing acceptance.
+
+## Methods used for 0.1.1
+
+Public installation checks passed for all nine languages. PyPI, NuGet and RubyGems
+used the scoped GitHub trusted publishers for release.yml. npm used its normal
+CLI with the owner's two-factor confirmation. The first crates.io publication
+used a temporary publish-new token restricted to licentivo-launch and expiring
+on 2026-10-24; the exact reviewed crate bytes were uploaded through Cargo's
+published registry API. Maven Central received the signed bundle through its
+Portal. Its JAR, POM, sources, Javadoc, signatures and version index were checked
+from the public repository. C/C++ use the checksummed GitHub release archives.
+
+The optional npm and crates jobs in release.yml require a separately registered
+trusted publisher before they can be used. Their presence in the workflow does
+not claim those grants have been configured. No registry token or signing private
+key belongs in this repository. See registry-status.json and
+registry-verification.json for the actual published version and installation
+results.
