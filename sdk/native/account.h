@@ -38,4 +38,3 @@ launch_application *launch_application_cli(int argc,char **argv);
 }
 #endif
 #endif
-
