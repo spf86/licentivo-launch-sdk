@@ -2,7 +2,7 @@
 
 Release: [https://github.com/spf86/licentivo-launch-sdk/releases/tag/v0.1.1](https://github.com/spf86/licentivo-launch-sdk/releases/tag/v0.1.1).
 
-8/9 public installation checks passed. Maven Central is publishing the validated Java deployment; it is not yet counted as installed.
+9/9 public installation checks passed. All nine language distributions are published and verified.
 
 Go resolves the immutable v0.1.1 module. Python, npm, NuGet, crates.io and RubyGems use their standard package managers. C and C++ use the checksummed native GitHub release. Java uses the same signed JAR and POM in Maven Central.
 
