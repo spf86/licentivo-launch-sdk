@@ -20,10 +20,10 @@
 | 语言 | 只安装 Launch | 页面提供的连接函数 | 包内直接初始化 API |
 | --- | --- | --- | --- |
 | Go | 解压 Go 模块 ZIP，使用本地 require/replace | `connectLaunch()` | `launchclient.Connect` |
-| Python 3.10+ | `pip install ./licentivo_launch-0.1.0-py3-none-any.whl` | `connect_launch()` | `Application.connect` |
+| Python 3.10+ | `pip install ./licentivo_launch-0.1.1-py3-none-any.whl` | `connect_launch()` | `Application.connect` |
 | C# / .NET 8+ | 在本地 NuGet 源安装 `Licentivo.Launch` | `LaunchConnection.Open()` | `Application.Connect` |
-| Java 17+ | 将 `launch-client-0.1.0.jar` 加入 classpath | `LaunchConnection.open()` | `Launch.connect` |
-| Node.js 20.3+ | `npm install ./licentivo-launch-0.1.0.tgz` | `connectLaunch()` | `Application.connect` |
+| Java 17+ | 将 `launch-client-0.1.1.jar` 加入 classpath | `LaunchConnection.open()` | `Launch.connect` |
+| Node.js 20.3+ | `npm install ./licentivo-launch-0.1.1.tgz` | `connectLaunch()` | `Application.connect` |
 | Rust 1.85+ | 解压 crate，添加本地 `licentivo-launch` 依赖 | `connect_launch()` | `Application::connect` |
 | Ruby 3.1+ | 安装平台对应的 `licentivo-launch` gem | `connect_launch` | `Application.connect` |
 | C11 | 解压 Launch 原生包，CMake 导入 | `connect_launch()` | `launch_application_connect` |

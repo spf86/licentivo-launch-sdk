@@ -1,9 +1,9 @@
-# Launch Ruby 0.1.0
+# Launch Ruby 0.1.1
 
 Ruby 3.1+. Install only the Launch gem matching the platform:
 
 ```sh
-gem install --local ./licentivo-launch-0.1.0-x64-mingw-ucrt.gem
+gem install --local ./licentivo-launch-0.1.1-x64-mingw-ucrt.gem
 ```
 
 SDK 0.11.0 Ruby code, its private native core and Windows curl DLL are included. RubyGems resolves the ordinary base64 dependency. The generic source gem builds its own embedded core automatically and needs normal C11/curl/OpenSSL tools for the platform. No official SDK gem or external native-library override is needed.

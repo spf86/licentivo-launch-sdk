@@ -18,7 +18,7 @@ pub use store::EncryptedFileStore;
 use time::{format_description::well_known::Rfc3339, OffsetDateTime};
 pub use transport::CurlTransport;
 
-pub const VERSION: &str = "0.1.0";
+pub const VERSION: &str = "0.1.1";
 #[derive(Debug, Clone)]
 pub struct Failure {
     pub code: String,

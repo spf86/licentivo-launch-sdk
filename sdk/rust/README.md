@@ -1,4 +1,4 @@
-# Launch Rust 0.1.0
+# Launch Rust 0.1.1
 
 Rust 1.85+. Extract the .crate or source ZIP and depend only on licentivo-launch through its local path. SDK 0.11.0 Rust bindings and C11 sources are embedded. build.rs compiles and links the core automatically; no separate licentivo crate or SDK link path is needed.
 

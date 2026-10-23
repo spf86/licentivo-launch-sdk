@@ -190,7 +190,7 @@ test("versions, feature guard, lifecycle and honest acceptance boundaries are re
   assert.equal(upstream, "0.11.0");
   for (const language of Object.keys(integrationTargets)) {
     const {text} = buildIntegrationPrompt({language, report: report(language)});
-    for (const required of ["Launch integration package 0.1.0", "SDK 0.11.0", "expires_at", "feature guard", "close", "logout", "release device", "ENTITLEMENT_PENDING", "Retry-After", "ENTITLEMENT_EXPIRED", "ENTITLEMENT_SUSPENDED", "ENTITLEMENT_NOT_PURCHASED", "EMAIL_VERIFICATION_REQUIRED", "401/403/404", "HTTP 5xx", "Cancellation and 429", "tampered/expired cache is rejected", "scripts/acceptance.py", "acceptance_complete"]) assert.ok(text.includes(required), `${language} is missing ${required}`);
+    for (const required of ["Launch integration package 0.1.1", "SDK 0.11.0", "expires_at", "feature guard", "close", "logout", "release device", "ENTITLEMENT_PENDING", "Retry-After", "ENTITLEMENT_EXPIRED", "ENTITLEMENT_SUSPENDED", "ENTITLEMENT_NOT_PURCHASED", "EMAIL_VERIFICATION_REQUIRED", "401/403/404", "HTTP 5xx", "Cancellation and 429", "tampered/expired cache is rejected", "scripts/acceptance.py", "acceptance_complete"]) assert.ok(text.includes(required), `${language} is missing ${required}`);
     assert.match(text, /Do not separately install an official SDK package, copy an adapter or configure upstream SDK paths/);
     assert.doesNotMatch(text, /pip install \.\/examples\/vendor|Licentivo\.SDK 0\.11|licentivo-sdk-0\.11\.0\.jar|exact official peer dependency|Install or compile the official licentivo-sdk/);
     assert.match(text, /no launch-config.json or product.json file is required/);

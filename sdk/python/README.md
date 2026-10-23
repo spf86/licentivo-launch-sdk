@@ -1,9 +1,9 @@
-# Launch Python 0.1.0
+# Launch Python 0.1.1
 
 Python 3.10+. Install only Launch:
 
 ```sh
-python -m pip install ./licentivo_launch-0.1.0-py3-none-any.whl
+python -m pip install ./licentivo_launch-0.1.1-py3-none-any.whl
 ```
 
 From source use python -m pip install ./sdk/python. The wheel embeds SDK 0.11.0 and its default adapter; pip resolves the ordinary cryptography dependency. No separate licentivo-sdk installation or PYTHONPATH entry is needed.

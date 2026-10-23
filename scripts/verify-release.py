@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import tarfile
 
 
 def verify(directory):
@@ -36,6 +37,22 @@ def verify(directory):
             raise ValueError('Invalid language artifact contract.')
     if inventory.get('source_bundle') not in records or 'integration-packages.json' not in records:
         raise ValueError('Missing checksummed source bundle or inventory.')
+    npm_package = next(item for item in inventory['languages'] if item['language'] == 'JavaScript/Node.js')
+    with tarfile.open(directory / npm_package['artifact'], 'r:gz') as archive:
+        names = set(archive.getnames())
+        manifest = json.load(archive.extractfile('package/package.json'))
+        if manifest['version'] != version:
+            raise ValueError('The npm package version does not match the release.')
+        def check_entrypoints(value):
+            if isinstance(value, dict):
+                for target in value.values():
+                    check_entrypoints(target)
+            elif isinstance(value, str) and value.startswith('./'):
+                if 'package/' + value[2:] not in names:
+                    raise ValueError('Missing npm export: ' + value)
+        check_entrypoints(manifest.get('exports', {}))
+        if 'package/' + manifest['types'].removeprefix('./') not in names:
+            raise ValueError('Missing npm TypeScript declarations.')
     return {'version': version, 'languages': 9, 'verified_artifacts': len(records)}
 
 

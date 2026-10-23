@@ -1,15 +1,15 @@
 # Launch application integration packages
 
-Launch **0.1.0** embeds official Licentivo SDK **0.11.0** for all **nine languages**. Install only the Launch package for your language. Its implementation, default adapter, license notices and SDK linking configuration are included. TypeScript declarations belong to JavaScript; the trusted Go Web backend is an extra example. These are local distributions; no registry publication is claimed.
+Launch **0.1.1** embeds official Licentivo SDK **0.11.0** for all **nine languages**. Install only the Launch package for your language. Its implementation, default adapter, license notices and SDK linking configuration are included. TypeScript declarations belong to JavaScript; the trusted Go Web backend is an extra example. These are local distributions; no registry publication is claimed.
 
 | Language | Single Launch artifact | Package source / API guide |
 | --- | --- | --- |
 | Go | Self-contained module ZIP | [pkg/launchclient](../pkg/launchclient/README.md) |
-| Python | licentivo_launch-0.1.0-py3-none-any.whl | [sdk/python](../sdk/python/README.md) |
-| C# / .NET 8 | Licentivo.Launch.0.1.0.nupkg | [sdk/csharp](../sdk/csharp/README.md) |
-| Java 17 | launch-client-0.1.0.jar and POM | [sdk/java](../sdk/java/README.md) |
-| JavaScript / Node.js | licentivo-launch-0.1.0.tgz | [sdk/javascript](../sdk/javascript/README.md) |
-| Rust | licentivo-launch-0.1.0.crate or source ZIP | [sdk/rust](../sdk/rust/README.md) |
+| Python | licentivo_launch-0.1.1-py3-none-any.whl | [sdk/python](../sdk/python/README.md) |
+| C# / .NET 8 | Licentivo.Launch.0.1.1.nupkg | [sdk/csharp](../sdk/csharp/README.md) |
+| Java 17 | launch-client-0.1.1.jar and POM | [sdk/java](../sdk/java/README.md) |
+| JavaScript / Node.js | licentivo-launch-0.1.1.tgz | [sdk/javascript](../sdk/javascript/README.md) |
+| Rust | licentivo-launch-0.1.1.crate or source ZIP | [sdk/rust](../sdk/rust/README.md) |
 | Ruby | Platform Launch gem or source gem | [sdk/ruby](../sdk/ruby/README.md) |
 | C | Launch native CMake installation ZIP | [sdk/native](../sdk/native/README.md) |
 | C++ | Same native archive, C++17 API | [sdk/native](../sdk/native/README.md) |
@@ -19,10 +19,10 @@ Launch **0.1.0** embeds official Licentivo SDK **0.11.0** for all **nine languag
 Use the artifacts identified in integration-packages.json. Each language records sdk_managed: true and requires_separate_official_sdk: false. Verify SHA256SUMS before installation.
 
 ```powershell
-python -m pip install ./licentivo_launch-0.1.0-py3-none-any.whl
-npm install ./licentivo-launch-0.1.0.tgz
-dotnet add YOUR_PROJECT package Licentivo.Launch --version 0.1.0 --source YOUR_LOCAL_FEED
-gem install --local ./licentivo-launch-0.1.0-x64-mingw-ucrt.gem
+python -m pip install ./licentivo_launch-0.1.1-py3-none-any.whl
+npm install ./licentivo-launch-0.1.1.tgz
+dotnet add YOUR_PROJECT package Licentivo.Launch --version 0.1.1 --source YOUR_LOCAL_FEED
+gem install --local ./licentivo-launch-0.1.1-x64-mingw-ucrt.gem
 ```
 
 Java uses only the Launch JAR on its classpath; its POM has no official SDK dependency. Go consumers extract the module ZIP and use a local require/replace for Launch; no public Go module URL exists yet. Rust consumers extract the crate or source ZIP and add only a local licentivo-launch path dependency. No official SDK package or checkout is needed.

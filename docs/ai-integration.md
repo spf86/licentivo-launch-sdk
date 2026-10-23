@@ -22,7 +22,7 @@ Launch 只生成文本，不自动连接 AI 服务、上传项目或替你运行
 
 ## 在源码分发包中使用
 
-`licentivo-launch-0.1.0-source.zip` 保留以下文件，便于在自己的工具中生成相同的提示词：
+`licentivo-launch-0.1.1-source.zip` 保留以下文件，便于在自己的工具中生成相同的提示词：
 
 - `internal/httpapi/web/integration-prompts.js`：不依赖页面或服务端的提示词生成模块。
 - `scripts/integration-prompts.test.mjs`：本地 Node 测试。

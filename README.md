@@ -15,18 +15,18 @@ configuration file or manual entry of two internal product IDs is required.
 
 ## Install into your application
 
-Version: **0.1.0**. Check the [publication status](docs/registry-status.json) before
+Version: **0.1.1**. Check the [publication status](docs/registry-status.json) before
 using a registry command; a staged package is not a published package.
 
 | Language | Registry command / distribution | API reference |
 | --- | --- | --- |
-| Go | `go get github.com/spf86/licentivo-launch-sdk/pkg/launchclient@v0.1.0` | [Go](pkg/launchclient/README.md) |
-| Python | `python -m pip install "licentivo-launch==0.1.0"` | [Python](sdk/python/README.md) |
-| C# | `dotnet add package Licentivo.Launch --version 0.1.0` | [.NET](sdk/csharp/README.md) |
-| Java | Maven/Gradle: `com.licentivo.launch:launch-client:0.1.0` | [Java](sdk/java/README.md) |
-| Node.js / TypeScript | `npm install @licentivo/launch@0.1.0` | [Node.js](sdk/javascript/README.md) |
-| Rust | `cargo add licentivo-launch@=0.1.0` | [Rust](sdk/rust/README.md) |
-| Ruby | `gem install licentivo-launch --version 0.1.0` | [Ruby](sdk/ruby/README.md) |
+| Go | `go get github.com/spf86/licentivo-launch-sdk/pkg/launchclient@v0.1.1` | [Go](pkg/launchclient/README.md) |
+| Python | `python -m pip install "licentivo-launch==0.1.1"` | [Python](sdk/python/README.md) |
+| C# | `dotnet add package Licentivo.Launch --version 0.1.1` | [.NET](sdk/csharp/README.md) |
+| Java | Maven/Gradle: `com.licentivo.launch:launch-client:0.1.1` | [Java](sdk/java/README.md) |
+| Node.js / TypeScript | `npm install @licentivo/launch@0.1.1` | [Node.js](sdk/javascript/README.md) |
+| Rust | `cargo add licentivo-launch@=0.1.1` | [Rust](sdk/rust/README.md) |
+| Ruby | `gem install licentivo-launch --version 0.1.1` | [Ruby](sdk/ruby/README.md) |
 | C / C++ | Versioned CMake packages in [GitHub Releases](https://github.com/spf86/licentivo-launch-sdk/releases) | [C/C++](sdk/native/README.md) |
 
 Go requires 1.26+, Python 3.10+, .NET 8+, Java 17+, Node.js 20.3+, Rust 1.85+,

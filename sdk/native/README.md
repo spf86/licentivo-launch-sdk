@@ -1,4 +1,4 @@
-# Launch C / C++ 0.1.0
+# Launch C / C++ 0.1.1
 
 C11/C++17 and CMake. Extract the native installation ZIP, then add only that Launch prefix to CMake. SDK 0.11.0 core, adapters, import targets and notices are included. The Windows amd64 GNU archive bundles curl. Other platforms can build the complete source using standard C11/curl/OpenSSL development libraries.
 

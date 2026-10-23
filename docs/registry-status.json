@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "https://github.com/spf86/licentivo-launch-sdk",
   "registries": {
     "go": {"package": "github.com/spf86/licentivo-launch-sdk/pkg/launchclient", "status": "pending"},
