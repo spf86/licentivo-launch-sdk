@@ -30,7 +30,7 @@ def public_files(directory):
             continue
         if source.is_symlink():
             raise ValueError('Symlinks are not permitted in distributions.')
-        if source.is_file() and source.suffix not in {'.pyc', '.log'}:
+        if source.is_file() and source.suffix not in {'.pyc', '.log', '.so', '.dll', '.dylib', '.a', '.lib', '.exe', '.o', '.obj'}:
             yield rel, source
 
 
@@ -181,6 +181,8 @@ def main():
         # Source distributions include no generated test/cache files.
         clean_source = work / 'clean-source'
         copy_tree(source, clean_source)
+        for language in ('rust', 'ruby', 'native'):
+            copy_curl(args.curl_root, clean_source / 'sdk' / language / 'vendor/curl')
         archive(output / f'licentivo-launch-{version}-source.zip', clean_source)
     inventory = {'schema_version': 2, 'wrapper_version': version, 'upstream_sdk_version': '0.11.0',
                  'sdk_dependency_management': 'embedded', 'requires_separate_official_sdk': False,

@@ -49,7 +49,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y libcurl4-openssl-dev libssl-dev cmake build-essential
-          python -m pip install 'cryptography>=44.0.1,<49' build twine
+          python -m pip install 'cryptography>=44.0.1,<49' build twine 'setuptools>=68' wheel
           gem install base64 --no-document
           rustup default stable
       - name: Verify all nine source integrations and signed authorization fixtures

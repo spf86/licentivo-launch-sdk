@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Run all nine local client suites without a merchant or licensing service."""
 import json
+import hashlib
 import os
 from pathlib import Path
 import shutil
@@ -17,6 +18,11 @@ def run(*args, cwd=ROOT):
 
 def main():
     WORK.mkdir(parents=True, exist_ok=True)
+    manifest = json.loads((ROOT / 'sdk/managed-sdk-manifest.json').read_text())
+    for item in manifest['files']:
+        source = (ROOT / item['destination']).resolve()
+        if ROOT not in source.parents or hashlib.sha256(source.read_bytes()).hexdigest() != item['sha256']:
+            raise ValueError('Embedded SDK source checksum mismatch: ' + item['destination'])
     windows = os.name == 'nt'
     run('go', 'test', './pkg/launchclient', '-count=1')
     for example in ('go', 'web-backend'):
