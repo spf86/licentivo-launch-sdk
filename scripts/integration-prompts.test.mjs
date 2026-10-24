@@ -43,7 +43,7 @@ test("all nine language wrappers and the separate Go Web option point to real so
     assert.ok(result.text.includes(target.wrapperPath + "/README.md"));
     assert.ok(result.text.includes(target.examplePath));
     assert.ok(result.text.includes(target.publicReadme));
-    assert.match(result.text, /https:\/\/github\.com\/spf86\/licentivo-launch-sdk\/releases\/tag\/v0\.1\.2/);
+    assert.match(result.text, /https:\/\/github\.com\/spf86\/licentivo-launch-sdk\/releases\/tag\/v0\.1\.3/);
     assert.match(result.text, /https:\/\/www\.licentivo\.com\/launch-docs\.html#developer/);
     assert.equal(Object.isFrozen(target), true);
   }
