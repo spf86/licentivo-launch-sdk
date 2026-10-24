@@ -62,7 +62,7 @@
       "status": "pending",
       "install_verified": false,
       "github_download_available": false,
-      "deployment_id": "cac96184-c336-4799-a759-9d59a73d3d95",
+      "deployment_id": null,
       "verified_at": null,
       "verification_receipt": "registry-verification.json"
     },
@@ -122,5 +122,5 @@
     }
   },
   "external_acceptance_complete": false,
-  "previous_version_status": "registry-status-0.1.1.json"
+  "previous_version_status": "registry-status-0.1.2.json"
 }

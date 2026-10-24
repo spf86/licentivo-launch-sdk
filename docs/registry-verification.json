@@ -68,11 +68,7 @@
   },
   "external_acceptance_complete": false,
   "evidence_scope": "local_evidence paths are retained in the Launch maintainer workspace, not public downloads.",
-  "local_summary": "artifacts/sdk-012-public-summary.json",
-  "retained_attempts": [
-    "artifacts/sdk-012-public-initial/go/verification.json",
-    "artifacts/sdk-012-public-go-retry/go/verification.json",
-    "artifacts/sdk-012-public-followup/ruby/verification.json"
-  ],
-  "previous_version_receipt": "registry-verification-0.1.1.json"
+  "local_summary": null,
+  "retained_attempts": [],
+  "previous_version_receipt": "registry-verification-0.1.2.json"
 }
