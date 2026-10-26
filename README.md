@@ -1,5 +1,7 @@
 # Licentivo Launch SDKs
 
+Maven Central 0.1.4 is awaiting publication. Until then, use Maven version 0.1.3 or the Java JAR from the [GitHub Release](https://github.com/spf86/licentivo-launch-sdk/releases/tag/v0.1.4). [Publication status](docs/publication-0.1.4.json).
+
 [Website](https://www.licentivo.com/en/launch.html) · [Documentation](https://www.licentivo.com/en/launch-docs.html) · [Source code](https://github.com/spf86/licentivo-launch-sdk)
 
 Account login and license-protected application operations in **Go, Python, C#,

@@ -6,3 +6,5 @@ This maintenance release adds official website and documentation links to the si
 - [Documentation](https://www.licentivo.com/en/launch-docs.html)
 
 SDK runtime behavior and dependencies are unchanged. Launch continues to embed the reviewed Licentivo SDK 0.11.2.
+
+Publication status: npm, PyPI, NuGet, crates.io and RubyGems are published. Maven Central is awaiting publication; the Java JAR is available from this GitHub Release.
