@@ -1,11 +1,13 @@
-# Launch Python 0.1.3
+# Launch Python 0.1.4
+
+[Website](https://www.licentivo.com/en/launch.html) · [Documentation](https://www.licentivo.com/en/launch-docs.html) · [Source code](https://github.com/spf86/licentivo-launch-sdk)
 
 > Local account-exchange changes are unpublished. Login uses a short-lived identity assertion; Launch calculates purchased dates and Licentivo owns runtime permission. See the repository guide docs/account-purchase-boundary.md.
 
 Python 3.10+. Install only Launch:
 
 ```sh
-python -m pip install licentivo-launch==0.1.3
+python -m pip install licentivo-launch==0.1.4
 ```
 
 From source use python -m pip install ./sdk/python. The wheel embeds SDK 0.11.2 and its default adapter; pip resolves the ordinary cryptography dependency. No separate licentivo-sdk installation or PYTHONPATH entry is needed.

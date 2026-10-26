@@ -1,11 +1,13 @@
-# Launch Ruby 0.1.3
+# Launch Ruby 0.1.4
+
+[Website](https://www.licentivo.com/en/launch.html) · [Documentation](https://www.licentivo.com/en/launch-docs.html) · [Source code](https://github.com/spf86/licentivo-launch-sdk)
 
 > Local account-exchange changes are unpublished. Login uses a short-lived identity assertion; Launch calculates purchased dates and Licentivo owns runtime permission. See the repository guide docs/account-purchase-boundary.md.
 
 Ruby 3.1+. Install only the Launch gem matching the platform:
 
 ```sh
-gem install licentivo-launch --version 0.1.3
+gem install licentivo-launch --version 0.1.4
 ```
 
 SDK 0.11.2 Ruby code, its private native core and Windows curl DLL are included. RubyGems resolves the ordinary base64 dependency. The generic source gem builds its own embedded core automatically and needs normal C11/curl/OpenSSL tools for the platform. No official SDK gem or external native-library override is needed.

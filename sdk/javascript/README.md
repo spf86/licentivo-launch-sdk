@@ -1,11 +1,13 @@
-# Launch Node.js 0.1.3
+# Launch Node.js 0.1.4
+
+[Website](https://www.licentivo.com/en/launch.html) · [Documentation](https://www.licentivo.com/en/launch-docs.html) · [Source code](https://github.com/spf86/licentivo-launch-sdk)
 
 > Local account-exchange changes are unpublished. Login uses a short-lived identity assertion; Launch calculates purchased dates and Licentivo owns runtime permission. See the repository guide docs/account-purchase-boundary.md.
 
 Node.js 20.3+. Install only Launch from npm:
 
 ```sh
-npm install @licentivo/launch@0.1.3
+npm install @licentivo/launch@0.1.4
 ```
 
 Import from @licentivo/launch. Official SDK 0.11.2 modules, default adapter and TypeScript declarations are inside the package. There is no official SDK peer dependency.

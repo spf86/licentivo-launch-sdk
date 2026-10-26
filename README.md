@@ -1,5 +1,7 @@
 # Licentivo Launch SDKs
 
+[Website](https://www.licentivo.com/en/launch.html) · [Documentation](https://www.licentivo.com/en/launch-docs.html) · [Source code](https://github.com/spf86/licentivo-launch-sdk)
+
 Account login and license-protected application operations in **Go, Python, C#,
 Java, JavaScript/TypeScript, Rust, Ruby, C and C++**. MIT licensed.
 
@@ -15,19 +17,19 @@ configuration file or manual entry of two internal product IDs is required.
 
 ## Install into your application
 
-Version: **0.1.3**, with official SDK **0.11.2**. The commands below target this release. Publication and fresh-consumer results are recorded in [publication status](docs/registry-status.json) and [verification receipts](docs/registry-verification.json); the [0.1.3 release record](docs/publication-0.1.3.md) describes this update.
+Version: **0.1.4**, with official SDK **0.11.2**. The commands below target this release. Publication and fresh-consumer results are recorded in [publication status](docs/registry-status.json) and [verification receipts](docs/registry-verification.json); the [0.1.4 release record](docs/publication-0.1.4.md) describes this update.
 
 This update strengthens account logout persistence, restore coordination and the matching official runtime protections across all nine languages. Install one Launch package; it includes its reviewed Licentivo runtime.
 
 | Language | Registry command / distribution | API reference |
 | --- | --- | --- |
-| Go | `go get github.com/spf86/licentivo-launch-sdk/pkg/launchclient@v0.1.3` | [Go](pkg/launchclient/README.md) |
-| Python | `python -m pip install "licentivo-launch==0.1.3"` | [Python](sdk/python/README.md) |
-| C# | `dotnet add package Licentivo.Launch --version 0.1.3` | [.NET](sdk/csharp/README.md) |
-| Java | Maven/Gradle: `com.licentivo.launch:launch-client:0.1.3` | [Java](sdk/java/README.md) |
-| Node.js / TypeScript | `npm install @licentivo/launch@0.1.3` | [Node.js](sdk/javascript/README.md) |
-| Rust | `cargo add licentivo-launch@=0.1.3` | [Rust](sdk/rust/README.md) |
-| Ruby | `gem install licentivo-launch --version 0.1.3` | [Ruby](sdk/ruby/README.md) |
+| Go | `go get github.com/spf86/licentivo-launch-sdk/pkg/launchclient@v0.1.4` | [Go](pkg/launchclient/README.md) |
+| Python | `python -m pip install "licentivo-launch==0.1.4"` | [Python](sdk/python/README.md) |
+| C# | `dotnet add package Licentivo.Launch --version 0.1.4` | [.NET](sdk/csharp/README.md) |
+| Java | Maven/Gradle: `com.licentivo.launch:launch-client:0.1.4` | [Java](sdk/java/README.md) |
+| Node.js / TypeScript | `npm install @licentivo/launch@0.1.4` | [Node.js](sdk/javascript/README.md) |
+| Rust | `cargo add licentivo-launch@=0.1.4` | [Rust](sdk/rust/README.md) |
+| Ruby | `gem install licentivo-launch --version 0.1.4` | [Ruby](sdk/ruby/README.md) |
 | C / C++ | Versioned CMake packages in [GitHub Releases](https://github.com/spf86/licentivo-launch-sdk/releases) | [C/C++](sdk/native/README.md) |
 
 Go requires 1.26+, Python 3.10+, .NET 8+, Java 17+, Node.js 20.3+, Rust 1.85+,
