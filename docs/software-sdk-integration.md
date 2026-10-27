@@ -1,5 +1,9 @@
 # Application integration with Launch and Licentivo
 
+For HTTP tests on customer machines or private networks, follow [the two HTTP permissions, generated SDK options, and HTTPS migration guide in 14 languages](http-testing/README.md). A server switch does not update an installed SDK or change its configured URL.
+
+This guide applies to the Licentivo provider. To connect a merchant-owned licensing system without Licentivo, use [the custom licensing API and integration flow](external-licensing.md), select `custom_http` for the product/environment and retain that system's runtime SDK.
+
 These local, unpublished changes use account identity exchange. See [the responsibility and purchase-sync contract](account-purchase-boundary.md) for migration and server-side session revocation. Package version numbers have not been published or upgraded by this change.
 
 Launch owns merchant accounts, orders, prices, renewal/upgrade quotes, refunds and absolute purchased dates. Licentivo owns licenses, policies, device allowances, authorization sessions, signed permissions and runtime decisions. A successful Launch login or synchronized purchase is never permission to execute protected work.
