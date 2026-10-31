@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "sdk_version": "0.11.7",
-  "source_revision": "licentivo-sdk-v0.11.7",
+  "sdk_version": "0.11.8",
+  "source_revision": "github.com/spf86/licentivo-sdk@40b3b10b75ad4886c4c689baf07d65a752088191",
   "changes": "Private import/native-library relocation, a Windows SDK architecture-constant compatibility guard and an optional Java device-name default, with embedded text line endings normalized to LF; authorization and cryptographic logic are unchanged. Account-lifecycle revisions are released together with the matching Licentivo server. Public repository line endings are normalized to LF.",
   "files": [
     {
@@ -19,8 +19,8 @@
     {
       "source": "go/credential.go",
       "destination": "pkg/launchclient/internal/licentivo/credential.go",
-      "source_sha256": "3814fcaf40c51036f03d6ef36db33e6b8695c6ab30efb62b14c8a4461fd52d54",
-      "sha256": "8582526e320b17e3f004f67e6bdc0a8ef705a62b4fe969691f36797ed7d2c32b"
+      "source_sha256": "d315d08d38309459f04514f57750e08acdbfd2dfb6971550999b10d9c90cf952",
+      "sha256": "41dbb8e6147d000bd395fb1a5433c1868b2a57a6433fb1f02f44e0b2987b276c"
     },
     {
       "source": "go/device.go",
@@ -61,8 +61,8 @@
     {
       "source": "go/feature_tasks.go",
       "destination": "pkg/launchclient/internal/licentivo/feature_tasks.go",
-      "source_sha256": "9db143cb4898dca888ef08d1dcfffdd3814acfe30ca9c56b99a58b6dfa569604",
-      "sha256": "9db143cb4898dca888ef08d1dcfffdd3814acfe30ca9c56b99a58b6dfa569604"
+      "source_sha256": "e623cdd271f419229eb01c7fe3251f71ccc2b3566344edef9b65a9ece392f496",
+      "sha256": "e623cdd271f419229eb01c7fe3251f71ccc2b3566344edef9b65a9ece392f496"
     },
     {
       "source": "go/logout.go",
@@ -85,8 +85,8 @@
     {
       "source": "go/internal/lease/lease.go",
       "destination": "pkg/launchclient/internal/licentivo/internal/lease/lease.go",
-      "source_sha256": "94c6957cc22ee0094e4fd676af6aa47cf6b840e29e4133c4fffa7617c3aeb100",
-      "sha256": "94c6957cc22ee0094e4fd676af6aa47cf6b840e29e4133c4fffa7617c3aeb100"
+      "source_sha256": "d7b38a4976c253889731163bd1a16ad7e740260e98fdf99f1fbf0cb44aeb8f21",
+      "sha256": "d7b38a4976c253889731163bd1a16ad7e740260e98fdf99f1fbf0cb44aeb8f21"
     },
     {
       "source": "LICENSE",
@@ -103,14 +103,14 @@
     {
       "source": "VERSION",
       "destination": "pkg/launchclient/internal/licentivo/VERSION",
-      "source_sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e",
-      "sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e"
+      "source_sha256": "a6576a398af92dc97a76db69dcaa413486295103825f8db191fafd7ab6347371",
+      "sha256": "f8b4c1734b71016ea74dbdb5962960a3961615f3377ddf585c956cfd397b1d6d"
     },
     {
       "source": "python/licentivo.py",
       "destination": "sdk/python/src/licentivo_launch/_vendor/licentivo.py",
-      "source_sha256": "58971a0d7be94065b6717b67a388d234e6352bb14222cfe4274e57ad8afcbe07",
-      "sha256": "3f3f9ccd6d4eb66498793f90a0126e7ee279a0ac44e9e3985865a210908aaa08"
+      "source_sha256": "4fdb5114fbc10be7e5a08f6e2d44277d3830918b465344daa77515a082b2626b",
+      "sha256": "edf23f878a2243017d0f1c97f7fe1cdd8651f3afa1ffef6f13fa418571a7575a"
     },
     {
       "source": "python/licentivo_logout.py",
@@ -121,8 +121,8 @@
     {
       "source": "python/licentivo_tasks.py",
       "destination": "sdk/python/src/licentivo_launch/_vendor/licentivo_tasks.py",
-      "source_sha256": "e84b677653e736af88be6e2f915d9a4bc49f4242fc7fa476d5f2375ef1e726f6",
-      "sha256": "e84b677653e736af88be6e2f915d9a4bc49f4242fc7fa476d5f2375ef1e726f6"
+      "source_sha256": "90ab35adc267d07c901ebf5b629797c15099990a4a5b8370809bba604a9752a6",
+      "sha256": "90ab35adc267d07c901ebf5b629797c15099990a4a5b8370809bba604a9752a6"
     },
     {
       "source": "LICENSE",
@@ -139,8 +139,8 @@
     {
       "source": "VERSION",
       "destination": "sdk/python/src/licentivo_launch/_vendor/VERSION",
-      "source_sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e",
-      "sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e"
+      "source_sha256": "a6576a398af92dc97a76db69dcaa413486295103825f8db191fafd7ab6347371",
+      "sha256": "f8b4c1734b71016ea74dbdb5962960a3961615f3377ddf585c956cfd397b1d6d"
     },
     {
       "source": "javascript/app.mjs",
@@ -151,14 +151,14 @@
     {
       "source": "javascript/feature-tasks.mjs",
       "destination": "sdk/javascript/src/vendor/feature-tasks.mjs",
-      "source_sha256": "86a86dfe7b3588af0afbef8ccf35dce83666e5fd1378b5066a3c6e5bf559df8b",
-      "sha256": "86a86dfe7b3588af0afbef8ccf35dce83666e5fd1378b5066a3c6e5bf559df8b"
+      "source_sha256": "02c83641dc137772ddd8467d85c4e51a836e81550386fa7763f395006bcf0982",
+      "sha256": "02c83641dc137772ddd8467d85c4e51a836e81550386fa7763f395006bcf0982"
     },
     {
       "source": "javascript/licentivo.mjs",
       "destination": "sdk/javascript/src/vendor/licentivo.mjs",
-      "source_sha256": "ade58cc4652ecfe4362f9c8c709cbd1d72d01595f1fa6ea209ccc2ef537f7081",
-      "sha256": "ade58cc4652ecfe4362f9c8c709cbd1d72d01595f1fa6ea209ccc2ef537f7081"
+      "source_sha256": "37e79b0c48994069f17e265dfbe35af6fcc8e96dae319985f65a08c3b8b13780",
+      "sha256": "37e79b0c48994069f17e265dfbe35af6fcc8e96dae319985f65a08c3b8b13780"
     },
     {
       "source": "javascript/logout.mjs",
@@ -187,20 +187,20 @@
     {
       "source": "VERSION",
       "destination": "sdk/javascript/src/vendor/VERSION",
-      "source_sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e",
-      "sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e"
+      "source_sha256": "a6576a398af92dc97a76db69dcaa413486295103825f8db191fafd7ab6347371",
+      "sha256": "f8b4c1734b71016ea74dbdb5962960a3961615f3377ddf585c956cfd397b1d6d"
     },
     {
       "source": "csharp/Advanced.cs",
       "destination": "sdk/csharp/vendor/Advanced.cs",
-      "source_sha256": "ff7ebfc1546495e7cf879067057f0558346105631028e5a2f3cccc04d17baeae",
-      "sha256": "ff7ebfc1546495e7cf879067057f0558346105631028e5a2f3cccc04d17baeae"
+      "source_sha256": "147f270daf53b9f353e3b7093a5e1cf5bad2e443eb9b12636a6d5b50d06e08f9",
+      "sha256": "147f270daf53b9f353e3b7093a5e1cf5bad2e443eb9b12636a6d5b50d06e08f9"
     },
     {
       "source": "csharp/DeviceCredential.cs",
       "destination": "sdk/csharp/vendor/DeviceCredential.cs",
-      "source_sha256": "ab6fa4776f4336d0102d398c2c18d756abc5f2ccd3272e57861cc6ad9e1df2df",
-      "sha256": "ab6fa4776f4336d0102d398c2c18d756abc5f2ccd3272e57861cc6ad9e1df2df"
+      "source_sha256": "8174d95c547762c891e3000c3b81bc63ef2e3b6c1ecebc16e92fa15436c18a28",
+      "sha256": "8174d95c547762c891e3000c3b81bc63ef2e3b6c1ecebc16e92fa15436c18a28"
     },
     {
       "source": "csharp/DeviceInfo.cs",
@@ -217,8 +217,8 @@
     {
       "source": "csharp/FeatureTasks.cs",
       "destination": "sdk/csharp/vendor/FeatureTasks.cs",
-      "source_sha256": "34165f1da56d3eedaad847dc7f436f5e79235844e67900aea7724c881ba856de",
-      "sha256": "34165f1da56d3eedaad847dc7f436f5e79235844e67900aea7724c881ba856de"
+      "source_sha256": "a834080f9395ff63051a2946c04a8701c6847bb28ca1e779606abb832a3f0104",
+      "sha256": "a834080f9395ff63051a2946c04a8701c6847bb28ca1e779606abb832a3f0104"
     },
     {
       "source": "csharp/LicentivoClient.cs",
@@ -259,20 +259,20 @@
     {
       "source": "VERSION",
       "destination": "sdk/csharp/vendor/VERSION",
-      "source_sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e",
-      "sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e"
+      "source_sha256": "a6576a398af92dc97a76db69dcaa413486295103825f8db191fafd7ab6347371",
+      "sha256": "f8b4c1734b71016ea74dbdb5962960a3961615f3377ddf585c956cfd397b1d6d"
     },
     {
       "source": "java/src/licentivo/Capabilities.java",
       "destination": "sdk/java/src/licentivo/Capabilities.java",
-      "source_sha256": "453baec987af6fcb6bb9eccf7a1dc2e32feedba195d55fd545db96e7a98420a2",
-      "sha256": "453baec987af6fcb6bb9eccf7a1dc2e32feedba195d55fd545db96e7a98420a2"
+      "source_sha256": "03379929ac17d6cd1cedc459775815e9a40f3e23565a70748b6af19f4de7e7b4",
+      "sha256": "03379929ac17d6cd1cedc459775815e9a40f3e23565a70748b6af19f4de7e7b4"
     },
     {
       "source": "java/src/licentivo/Client.java",
       "destination": "sdk/java/src/licentivo/Client.java",
-      "source_sha256": "47e1b7c0f7a5f63278331b5434173e90ce23ab2e37990c116aa54278ea5d4b63",
-      "sha256": "47e1b7c0f7a5f63278331b5434173e90ce23ab2e37990c116aa54278ea5d4b63"
+      "source_sha256": "29f95d8b83a11115bb95195009126500de54a6c1d6e001cb5edf2820971e7960",
+      "sha256": "29f95d8b83a11115bb95195009126500de54a6c1d6e001cb5edf2820971e7960"
     },
     {
       "source": "java/src/licentivo/Demo.java",
@@ -289,14 +289,14 @@
     {
       "source": "java/src/licentivo/DeviceCredential.java",
       "destination": "sdk/java/src/licentivo/DeviceCredential.java",
-      "source_sha256": "ba27e6b7b62dd7326f9b5fb116f94d601142d9a1bca327cd218f4491145b3a23",
-      "sha256": "ba27e6b7b62dd7326f9b5fb116f94d601142d9a1bca327cd218f4491145b3a23"
+      "source_sha256": "816c72340f10d70697f4dc799dc899936e46ff785cbe3565a1a2635d082af80f",
+      "sha256": "816c72340f10d70697f4dc799dc899936e46ff785cbe3565a1a2635d082af80f"
     },
     {
       "source": "java/src/licentivo/FeatureTasks.java",
       "destination": "sdk/java/src/licentivo/FeatureTasks.java",
-      "source_sha256": "6b87188fb29371537e5859d19e862475b0c0d707dd1cbe9f243d98006693cf15",
-      "sha256": "6b87188fb29371537e5859d19e862475b0c0d707dd1cbe9f243d98006693cf15"
+      "source_sha256": "1a8140727c36e403aba4dc4eb34146cdb7225eb9d6fd6bd0f4fd0c898adb6273",
+      "sha256": "1a8140727c36e403aba4dc4eb34146cdb7225eb9d6fd6bd0f4fd0c898adb6273"
     },
     {
       "source": "java/src/licentivo/Json.java",
@@ -349,8 +349,8 @@
     {
       "source": "VERSION",
       "destination": "sdk/java/vendor/VERSION",
-      "source_sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e",
-      "sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e"
+      "source_sha256": "a6576a398af92dc97a76db69dcaa413486295103825f8db191fafd7ab6347371",
+      "sha256": "f8b4c1734b71016ea74dbdb5962960a3961615f3377ddf585c956cfd397b1d6d"
     },
     {
       "source": "rust/src/lib.rs",
@@ -385,14 +385,14 @@
     {
       "source": "c/feature_tasks.h",
       "destination": "sdk/rust/vendor/c/feature_tasks.h",
-      "source_sha256": "a6df3772ff7001bbf58d998e6991e27cbcf9e007577116ac8f9cdd5e832dedcc",
-      "sha256": "a6df3772ff7001bbf58d998e6991e27cbcf9e007577116ac8f9cdd5e832dedcc"
+      "source_sha256": "4d7f183b9e3a6971571e3653833f847d4afb49b12d98b9c934e3cffa502daddb",
+      "sha256": "4d7f183b9e3a6971571e3653833f847d4afb49b12d98b9c934e3cffa502daddb"
     },
     {
       "source": "c/licentivo.c",
       "destination": "sdk/rust/vendor/c/licentivo.c",
-      "source_sha256": "78da723c815d2f04cd8a5dc735a8736f0197383d7510dfc03aaac2bee7c48bbd",
-      "sha256": "78da723c815d2f04cd8a5dc735a8736f0197383d7510dfc03aaac2bee7c48bbd"
+      "source_sha256": "8d086fa8eae28729b4d28d182cf0cbdeb112c16e1e7a51f4a2fa2bc8975ebbc6",
+      "sha256": "8d086fa8eae28729b4d28d182cf0cbdeb112c16e1e7a51f4a2fa2bc8975ebbc6"
     },
     {
       "source": "c/licentivo.h",
@@ -493,14 +493,14 @@
     {
       "source": "VERSION",
       "destination": "sdk/rust/vendor/VERSION",
-      "source_sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e",
-      "sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e"
+      "source_sha256": "a6576a398af92dc97a76db69dcaa413486295103825f8db191fafd7ab6347371",
+      "sha256": "f8b4c1734b71016ea74dbdb5962960a3961615f3377ddf585c956cfd397b1d6d"
     },
     {
       "source": "ruby/lib/licentivo.rb",
       "destination": "sdk/ruby/lib/licentivo_launch/vendor/licentivo.rb",
-      "source_sha256": "df69c81f56cd899012c3ed412cf7e54bfaefe7859b254a4b63056a16060ea11a",
-      "sha256": "ab42f40a18f18e3d8c87340060d88ef5db69f6d9c05289ff963dc0f15c0860e2"
+      "source_sha256": "c4608aaa25667028593999e9bd2dbe48b86ad9a15c05d85c389e83f66afa8cb3",
+      "sha256": "f96cf6c76cd253b9c81770ceefa6595f6a95fad312c7e31a534321d709533dbc"
     },
     {
       "source": "c/app.c",
@@ -529,14 +529,14 @@
     {
       "source": "c/feature_tasks.h",
       "destination": "sdk/ruby/vendor/c/feature_tasks.h",
-      "source_sha256": "a6df3772ff7001bbf58d998e6991e27cbcf9e007577116ac8f9cdd5e832dedcc",
-      "sha256": "a6df3772ff7001bbf58d998e6991e27cbcf9e007577116ac8f9cdd5e832dedcc"
+      "source_sha256": "4d7f183b9e3a6971571e3653833f847d4afb49b12d98b9c934e3cffa502daddb",
+      "sha256": "4d7f183b9e3a6971571e3653833f847d4afb49b12d98b9c934e3cffa502daddb"
     },
     {
       "source": "c/licentivo.c",
       "destination": "sdk/ruby/vendor/c/licentivo.c",
-      "source_sha256": "78da723c815d2f04cd8a5dc735a8736f0197383d7510dfc03aaac2bee7c48bbd",
-      "sha256": "78da723c815d2f04cd8a5dc735a8736f0197383d7510dfc03aaac2bee7c48bbd"
+      "source_sha256": "8d086fa8eae28729b4d28d182cf0cbdeb112c16e1e7a51f4a2fa2bc8975ebbc6",
+      "sha256": "8d086fa8eae28729b4d28d182cf0cbdeb112c16e1e7a51f4a2fa2bc8975ebbc6"
     },
     {
       "source": "c/licentivo.h",
@@ -637,14 +637,14 @@
     {
       "source": "VERSION",
       "destination": "sdk/ruby/vendor/VERSION",
-      "source_sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e",
-      "sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e"
+      "source_sha256": "a6576a398af92dc97a76db69dcaa413486295103825f8db191fafd7ab6347371",
+      "sha256": "f8b4c1734b71016ea74dbdb5962960a3961615f3377ddf585c956cfd397b1d6d"
     },
     {
       "source": "CMakeLists.txt",
       "destination": "sdk/native/vendor/sdk/CMakeLists.txt",
-      "source_sha256": "cbda84877dda7511d26684f0aa37095455199ff1b66eeeb1de220b1a6a73a57f",
-      "sha256": "cbda84877dda7511d26684f0aa37095455199ff1b66eeeb1de220b1a6a73a57f"
+      "source_sha256": "e0ec556f8649ca6d88801478e249974fed8d0e2a850d15cfd19d14a7bb6bc70e",
+      "sha256": "e39abe016e3b36ca3586e210a7978a2a78105c0ac0eba590d5bb51a1578b20be"
     },
     {
       "source": "LicentivoConfig.cmake.in",
@@ -667,8 +667,8 @@
     {
       "source": "VERSION",
       "destination": "sdk/native/vendor/sdk/VERSION",
-      "source_sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e",
-      "sha256": "165940f80183be2ddce83a1968b4e9ca19cc26be269120728b3df43d085a958e"
+      "source_sha256": "a6576a398af92dc97a76db69dcaa413486295103825f8db191fafd7ab6347371",
+      "sha256": "f8b4c1734b71016ea74dbdb5962960a3961615f3377ddf585c956cfd397b1d6d"
     },
     {
       "source": "c/app.c",
@@ -697,14 +697,14 @@
     {
       "source": "c/feature_tasks.h",
       "destination": "sdk/native/vendor/sdk/c/feature_tasks.h",
-      "source_sha256": "a6df3772ff7001bbf58d998e6991e27cbcf9e007577116ac8f9cdd5e832dedcc",
-      "sha256": "a6df3772ff7001bbf58d998e6991e27cbcf9e007577116ac8f9cdd5e832dedcc"
+      "source_sha256": "4d7f183b9e3a6971571e3653833f847d4afb49b12d98b9c934e3cffa502daddb",
+      "sha256": "4d7f183b9e3a6971571e3653833f847d4afb49b12d98b9c934e3cffa502daddb"
     },
     {
       "source": "c/licentivo.c",
       "destination": "sdk/native/vendor/sdk/c/licentivo.c",
-      "source_sha256": "78da723c815d2f04cd8a5dc735a8736f0197383d7510dfc03aaac2bee7c48bbd",
-      "sha256": "78da723c815d2f04cd8a5dc735a8736f0197383d7510dfc03aaac2bee7c48bbd"
+      "source_sha256": "8d086fa8eae28729b4d28d182cf0cbdeb112c16e1e7a51f4a2fa2bc8975ebbc6",
+      "sha256": "8d086fa8eae28729b4d28d182cf0cbdeb112c16e1e7a51f4a2fa2bc8975ebbc6"
     },
     {
       "source": "c/licentivo.h",
