@@ -2,46 +2,59 @@
   "version": "0.1.10",
   "upstream_sdk_version": "0.11.9",
   "release": "https://github.com/spf86/licentivo-launch-sdk/releases/tag/v0.1.10",
-  "checked_at": "2026-11-24T05:30:08.8947737Z",
-  "github_release_published": false,
-  "all_six_completed": false,
+  "release_source_commit": "b598cf983cdd9e3f027c64288562e21f723498b0",
+  "checked_at": "2026-11-24T05:53:28.7952166Z",
+  "github_release_published": true,
+  "all_six_completed": true,
   "registry_count": 6,
   "registries": {
     "npm": {
       "version": "0.1.10",
       "url": "https://registry.npmjs.org/@licentivo%2Flaunch/0.1.10",
-      "published": false,
-      "http_status": 404
+      "published": true,
+      "http_status": 200,
+      "observed_version": "0.1.10",
+      "metadata_sha256": "40d44cde717e940352cea61d1ef0652766bec7f8089cf81f4080843b7d3400fe"
     },
     "pypi": {
       "version": "0.1.10",
       "url": "https://pypi.org/pypi/licentivo-launch/0.1.10/json",
-      "published": false,
-      "http_status": 404
+      "published": true,
+      "http_status": 200,
+      "observed_version": "0.1.10",
+      "metadata_sha256": "4840baab57873298cb40cf556615faec51ac90593851f090fe607166c7650014"
     },
     "nuget": {
       "version": "0.1.10",
       "url": "https://api.nuget.org/v3-flatcontainer/licentivo.launch/0.1.10/licentivo.launch.nuspec",
-      "published": false,
-      "http_status": 404
+      "published": true,
+      "http_status": 200,
+      "observed_version": "0.1.10",
+      "metadata_sha256": "69535084061e7d1b5b54a6ceb56be39eed7780330f9fbefa2bfa91066a967794"
     },
     "ruby": {
       "version": "0.1.10",
       "url": "https://rubygems.org/api/v2/rubygems/licentivo-launch/versions/0.1.10.json",
-      "published": false,
-      "http_status": 404
+      "published": true,
+      "http_status": 200,
+      "observed_version": "0.1.10",
+      "metadata_sha256": "496df4c2f54186ad07f193d15aeb4868ead8b914c28c1916a8dfaf26b4b04d87"
     },
     "crates": {
       "version": "0.1.10",
       "url": "https://crates.io/api/v1/crates/licentivo-launch/0.1.10",
-      "published": false,
-      "http_status": 404
+      "published": true,
+      "http_status": 200,
+      "observed_version": "0.1.10",
+      "metadata_sha256": "28b444babd2ec27c80969f790d82d40975a4ebe6833520919315c76ec361a155"
     },
     "maven": {
       "version": "0.1.10",
       "url": "https://repo.maven.apache.org/maven2/com/licentivo/launch/launch-client/0.1.10/launch-client-0.1.10.pom",
-      "published": false,
-      "http_status": 404
+      "published": true,
+      "http_status": 200,
+      "observed_version": "0.1.10",
+      "metadata_sha256": "5b1013481c38c30121c5603778f4ac4725e430fa26dadd9987d9a8bc92012fe3"
     }
   }
 }
